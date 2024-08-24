@@ -142,9 +142,8 @@ STATIC_ROOT = "/static/"
 STATIC_URL = "/static/"
 
 # Sessionの設定を追加
-# SESSION_COOKIE_AGE = 60 * 60 * 2  # 2時間 - セッション時間は自動的に伸ばす。
-# SESSION_SAVE_EVERY_REQUEST = True
-# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_COOKIE_AGE = 60 * 60 * 2  # 2時間 - セッション時間は自動的に伸ばす。
+SESSION_SAVE_EVERY_REQUEST = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
